@@ -1,0 +1,77 @@
+.cardList {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1px;
+    margin-top: 2rem;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
+}
+
+.pagination button {
+    background-color: #343a40;
+    color: white;
+    border: none;
+    margin: 0 8px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.pagination button:hover {
+    background-color: #6c757d;
+}
+
+.pagination span {
+    font-weight: bold;
+    font-size: 25px;
+    backdrop-filter: blur(5px);
+    border-radius: 5%;
+    padding: 5px;
+}
+
+.buttonGoBack {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: #1d3557;
+    color: white;
+    padding: 8px 16px;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.buttonGoBack:hover {
+    background-color: #457b9d;
+}
+
+.select {
+    background-color: #343a40;
+    color: white;
+    border: none;
+    margin: 0 8px;
+    padding: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.select:hover {
+    background-color: #6c757d;
+}
+
+.pagination button.currentPage {
+    background-color: #6c757d; /* Cambia este color al que desees */
+    color: white; /* Cambia el color del texto si es necesario */
+}

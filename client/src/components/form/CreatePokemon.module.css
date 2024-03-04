@@ -1,0 +1,234 @@
+.form {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+    border: solid;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 8px;
+    background-color: #8e8c8cea;
+    box-shadow: 10px 10px 20px 5px rgb(0, 0, 0);
+}
+
+.form strong {
+    display: flex;
+}
+
+.formSection {
+    margin-top: 15px;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 4px;
+    box-sizing: border-box;
+    background-color: #c7c6c6da;
+}
+
+.form button {
+    background-color: #343a40;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.form button:hover {
+    background-color: #6c757d;
+}
+
+.goBackButton {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background-color: #343a40;
+    color: white;
+    font-size: x-large;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.goBackButton:hover {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+.form button:disabled {
+    background-color: #aeadad;
+    cursor: not-allowed;
+}
+
+.form button.enabled {
+    background-color: #343a40;
+}
+
+.form button.enabled:hover {
+    background-color: #6c757d;
+}
+
+.imageOptions {
+    display: flex;
+    align-items: center;
+}
+
+.imageOptions input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 4px;
+    box-sizing: border-box;
+}
+
+.imageOptions input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.imageOptions label {
+    display: flex;
+    align-items: center;
+    margin-left: 160px;
+    font-weight: bold;
+}
+
+.randomImage {
+    max-width: 8%;
+    max-height: 8%;
+    position: fixed;
+    top: 7rem;
+    right: 60rem;
+}
+
+.urlEntered {
+    position: fixed;
+    max-width: 15%;
+    max-height: 15%;
+    top: 8rem;
+    right: 47rem;
+}
+
+.containCheckbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.containCheckbox {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+}
+
+.checkmark {
+    position: relative;
+    top: 0;
+    left: 10px;
+    height: 1.3em;
+    width: 1.3em;
+    border: 3px solid #bfbdbd;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+/* When the checkbox is checked */
+.containCheckbox input:checked~.checkmark {
+    background: #6c757d;
+    border-color: #6c757d;
+    filter: drop-shadow(5px 5px);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+}
+
+.containCheckbox .checkmark:after {
+    inset: 0;
+    margin: auto;
+    width: 0.5em;
+    height: 0.5em;
+    background-color: #fbf8f8;
+    border-width: 0 0.15em 0.15em 0;
+}
+
+/* Show the checkmark when checked */
+.containCheckbox input:checked~.checkmark:after {
+    width: 0.25em;
+    height: 0.5em;
+    border: solid #414141;
+    border-width: 0 0.15em 0.15em 0;
+    border-color: white;
+    background-color: transparent;
+    transform: rotate(45deg);
+}
+
+.checked {
+    background-color: #0974f1;
+    border-color: #0974f1;
+    filter: drop-shadow(5px 5px);
+}
+
+.cardList {
+    position: absolute;
+    top: 20rem;
+    left: 20rem;
+}
+
+.errors {
+    position: absolute;
+    top: 10rem;
+    right: 20rem;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #8e8c8cd8;
+    box-shadow: 10px 10px 20px 5px rgb(0, 0, 0);
+}
+
+.errors strong {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.errors p {
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-weight: bold;
+    margin: 0;
+}
+
+.errors span {
+    display: flex;
+    font-weight: bold;
+    margin: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardList p {
+    color: white;
+    margin-top: 0;
+    background-color: #8e8c8cd8;
+    padding: 10px;
+    border-radius: 8px;
+    border: solid;
+    border-color: white;
+    border-width: 2px;
+    font-size: large;
+}
